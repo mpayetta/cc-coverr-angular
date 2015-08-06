@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+</head>
+
+<body>
+
+<!-- I've added the ng-app attribute which was missing in your implementation -->
+<!-- Also added the ng-controller which is called when the page loads and initializes everything -->
+<div class="homepage-hero-module" ng-app="coverrApp" ng-controller="CoverrController">
+    <div class="video-container">
+        <div class="filter"></div>
+        <div class="title-container">
+            <h1><strong>Chat with your university student services - RA's, ResLife, Career Center, etc.</strong></h1>
+            <h3><strong>Coming Soon</strong></h3>
+        </div>
+        <video autoplay loop class="fillWidth">
+            <source src="https://cover-videos.s3.amazonaws.com/For_Wes/MP%24/For_Wes.mp4" type="video/mp4"/>
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="https://cover-videos.s3.amazonaws.com/For_Wes/WEBM/For_Wes.webm" type="video/webm"/>
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="https://cover-videos.s3.amazonaws.com/For_Wes/Snapshots/For_Wes.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- All the angular code is in angular-script.js, there's also a script.js which
+     has your initial JQuery implementation
+     I've included JQuery and Angular in the HEAD of this same HTML file -->
+<script type="text/javascript" src="angular-script.js"></script>
+
+</body>
+
+</html>
